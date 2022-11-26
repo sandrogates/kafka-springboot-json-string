@@ -43,7 +43,20 @@ basically, How to work with this project :
    But...
    <b>curl -H "Accept: application/json" -H "Content-type: application/json" -X POST -d "{\"from\":\"Sandro Lemanski da Silva\",\"subject\":\"Springbook+kafka\",\"to\":\"sandrogates@gmail.com\",\"message\":\"Hi, this works\"}" http://localhost:8080/api/dotingjava/kafka/publish_json</b>
    
+9- To monitor kafka working
+   Example on windows
+   c:
+   cd \Data\kafka_2.12-3.3.1\bin\windows
+   
+   kafka-console-consumer.bat --topic dotingjava_json --from-beginning --bootstrap-server localhost:9092
+   
+   dotingjava_json is the topic used as an example
+
+   kafka-console-consumer.bat --topic dotingjava_string --from-beginning --bootstrap-server localhost:9092
+   
+   dotingjava_string is the topic used as an example
     
 I hope it has some use
 Tks
-sandrogates@gmail.com
+
+<b>sandrogates@gmail.com</b>
