@@ -34,7 +34,9 @@ basically, How to work with this project :
    
 7- Send string to Springboot
    <b>http://localhost:8080/api/dotingjava/kafka/publish_string?message=TEST_DOTING_JAVA</b>
+   
    or
+   
    <b>curl -X GET http://localhost:8080/api/dotingjava/kafka/publish_string?message=TESTE_DOTING_JAVA</b>
    
 8- Send json to Springboot
@@ -48,11 +50,11 @@ basically, How to work with this project :
    c:
    cd \Data\kafka_2.12-3.3.1\bin\windows
    
-   kafka-console-consumer.bat --topic dotingjava_json --from-beginning --bootstrap-server localhost:9092
+   <b>kafka-console-consumer.bat --topic dotingjava_json --from-beginning --bootstrap-server localhost:9092</b>
    
    dotingjava_json is the topic used as an example
 
-   kafka-console-consumer.bat --topic dotingjava_string --from-beginning --bootstrap-server localhost:9092
+   <b>kafka-console-consumer.bat --topic dotingjava_string --from-beginning --bootstrap-server localhost:9092</b>
    
    dotingjava_string is the topic used as an example
     
